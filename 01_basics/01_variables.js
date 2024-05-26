@@ -22,4 +22,4 @@ console.log(accountCity);
 /* way to log values into console in group. */
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
 
-/* You can use semi-colons(;) or not , it doesnt make any difference. */
+/* You can use semi-colons(;) or not , it doesnt make any difference. But while in future writing node or react its best to not use. */
