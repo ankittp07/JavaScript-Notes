@@ -1,2 +1,2 @@
-# JS-ChaiAurCode
-A code repo for learning javascript from chai aur code.
+# JavaScript-Notes
+A code repo of learning JavaScript from chai aur code.
