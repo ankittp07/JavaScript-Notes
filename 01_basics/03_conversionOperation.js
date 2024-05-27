@@ -1,4 +1,4 @@
-// we cant convert any datatype into null of undefined
+// we cant convert any datatype into null or undefined
 
 /* conversion string to number and boolean */
 let score = "ankit"
