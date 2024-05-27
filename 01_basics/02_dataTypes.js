@@ -11,7 +11,8 @@ console.log(3+3)
 console.log("Hitesh")
 
 
-// primitive or value datatypes:
+/*           primitive or value datatypes         */
+
 // number => 2 to power 53(limit)
 // bigint => use for number for bigger limit than above
 // string => ""(more preferable) or ''
@@ -29,7 +30,7 @@ console.log(state); // undefined
 console.log(userName); // output-hitesh
 console.log("hitesh"); // hitesh
 
-// object datatypes:(will discuss later)
+// object datatype :(will discuss later)
 
 console.log(typeof 18); // number
 console.log(typeof age); // number
