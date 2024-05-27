@@ -80,39 +80,72 @@ let undefinedBoolean = Boolean(docName)
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue); //-3
 
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
 // console.log(2**3);
-// console.log(2/3);
-// console.log(2%3);
+// console.log(3/3);
+// console.log(6%12);
 
 let str1 = "hello"
 let str2 = " hitesh"
-
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3); //hello hitesh
+//console.log(str1 + " myself" + str2 ); //hello myself hitesh
+//console.log(str1 + "myself" + str2); //hellomyself hitesh
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2); //12
+// console.log("1" + "2" + "3"); //123
+// console.log(1 + "2"); //12
+// console.log("1" + 2 + 2); //122 (if string comes before js will consider all further values as string and in string we dont add put write them together we'+' is used.)
+// console.log(1 + 2 + "2"); //32(but this isn't good practice use'()' like below)
+// console.log( (3 + 4) * 5 % 3); //2
+// console.log((3+4)*(5%3)); //14
 
-// console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
-// console.log(+"");
+// ** '+' is addition and '++' is increment '-' is subtraction and '--' is decrement
 
-let num1, num2, num3
+// console.log(+true); // 1 (boolean value in number and '+' represent increament in that value)
+// console.log(++true); // error
+// console.log(+""); // 0 (boolean in number)
+// console.log(true+); // error
+// console.log(true++); // error
 
-num1 = num2 = num3 = 2 + 2
+/*          increment operators          */
+
+// **Postfix increment** : If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value 'before' incrementing. 
+let x = 3;
+const y = x++;
+// console.log(x, y); // x is 4; y is 3
+let x2 = 3n;
+const y2 = x2++;
+// console.log(x2, y2); // x2 is 4n; y2 is 3n
+
+// **Prefix increment** : If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value 'after' incrementing.
+let a = 3;
+const b = ++a;
+// console.log(a, b);  // a is 4; b is 4
+let a2 = 3n;
+const b2 = ++a2;
+// console.log(a2, b2);  // a2 is 4n; b2 is 4n
+
+let boolean = true
+// console.log(boolean++); // 1
+// console.log(++boolean); // 3
+// console.log(+boolean); // 2
 
 let gameCounter = 100
-++gameCounter;
-// console.log(gameCounter);
+++gameCounter; //101 (here we can add '++'[not '+'] before and after)
+gameCounter++; // 101
+// console.log(gameCounter); // 102 (if use both declarations)
+
+
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2 //not a good practice to define like this because code should clean and readable
+// console.log(num1, num2, num3); // 4 4 4
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
-
