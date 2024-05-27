@@ -49,7 +49,7 @@ const myFunction = function(){
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 
-//++++++++++++++++++++++ Memory types +++++++++++++++++++++
+//                                       ++++++++++++++++++++++ Memory types +++++++++++++++++++++
 
 // Stack (Primitive datatypes stored) : here if we declare a variable we allocated the reference of copy of the original value in memory and whatever change we commit will be in that copy only
 
