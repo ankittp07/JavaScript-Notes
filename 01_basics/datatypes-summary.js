@@ -47,3 +47,40 @@ const myFunction = function(){
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++ Memory types +++++++++++++++++++++
+
+// Stack (Primitive datatypes stored) : here if we declare a variable we allocated the reference of copy of the original value in memory and whatever change we commit will be in that copy only
+
+// Heap (Non-Primitive) : here if we declare a variable we allocated the reference of original value in the memory location and the change we commit will be in it
+
+
+//             example of stack memory
+let myName = "ankit"
+let anotherName = myName
+// console.log(myName); // ankit
+// console.log(anotherName); // ankit
+
+anotherName = "sachin"
+// console.log(myName); // ankit
+// console.log(anotherName); // sachin
+// so here if we change value of anotherName variable myName value dont change because while declaring anotherName variable value to myName we allocated the reference of copy of value of myName in memory so the change will be in copy value not in original value of myName
+
+
+//            example of heap memory
+let userOne = {
+         email: "ankit@google.com",
+         city: "sikar"
+}
+// console.log(userOne); // { email: 'ankit@google.com', city: 'sikar' }
+let userTwo = userOne
+// console.log(userTwo); // { email: 'ankit@google.com', city: 'sikar' }
+
+userTwo.email = "jk@google.com" // in object we access by '.'
+// console.log(userOne); // { email: 'jk@google.com', city: 'sikar' }
+// console.log(userTwo); // { email: 'jk@google.com', city: 'sikar' }
+// so here when we change value of userTwo variable userOne value also change because while declaring userTwo variable value to userOne we allocated the reference original value of userOne in memory so the change will be in original value of userOne also
+
+// link to understand it more precisely
+// https://youtu.be/7gwc-1czolw?si=5N8Z6ipktqkwlHDD
